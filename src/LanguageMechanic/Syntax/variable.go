@@ -5,7 +5,7 @@ import "fmt"
 type Syntax interface {
 	Walk(int2 int)
 }
-func MyFunc() {
+func Variable() {
 	// --------------
 	// Built-in types
 	// --------------
@@ -50,6 +50,7 @@ func MyFunc() {
 	// ----------------------
 
 	// var is the only guarantee to initialize a zero value for a type.
+	//零值化
 	var a int
 	var b string
 	var c float64
@@ -61,6 +62,7 @@ func MyFunc() {
 	fmt.Printf("var d bool \t %T [%v]\n\n", d, d)
 
 	// Using the short variable declaration operator, we can define and initialize at the same time.
+	//简短变量声明符 推导声明
 	aa := 10
 	bb := "hello" // 1st word points to a array of characters, 2nd word is 5 bytes
 	cc := 3.14159
@@ -73,6 +75,7 @@ func MyFunc() {
 
 	// ---------------------
 	// Conversion vs casting
+	//类型转换
 	// ---------------------
 
 	// Go doesn't have casting, but conversion.

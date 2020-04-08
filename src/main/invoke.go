@@ -3,5 +3,6 @@ package main
 import "LanguageMechanic/Syntax"
 
 func main() {
-	Syntax.MyFunc()
+	//Syntax.Variable()
+	Syntax.Struct();
 }
